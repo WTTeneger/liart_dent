@@ -1,0 +1,196 @@
+{% extends "_base.html" %}
+{% block title %}{% endblock %}
+{% block meta %}{% endblock %}
+
+{% block content %}
+<section class="hero bg-grey">
+    <div class="container">
+        <div class="hero__wrapper">
+            <div class="hero__block">
+                <h1 class="hero__title">Имплантация</h1>
+                <p class="hero__subtitle">Восстановление любого количества утраченных зубов в два шага материалами
+                    европейских стандартов – это уже естественный
+                    процесс для стоматологических клиник высокого уровня по качеству предоставляемых услуг.</p>
+                <span class="hero__desc">Запишитесь на консультацию к нашим врачам!</span>
+                <div class="hero__buttons">
+                    <a class="btn btn__primary hero__button js-open--modal" href="#callback">Запись онлайн</a>
+                    <a class="btn btn__secondary hero__button" href="tel:+79250602211">Задать вопрос врачу</a>
+                </div>
+            </div><img class="hero__image" src="/images/service/implantation.png" style="top: 5rem;"
+                alt="ИМПЛАНТАЦИЯ" />
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <h2 class="about__title title">ИМПЛАНТАЦИЯ <span class="text-primary">LIART DENT</span></h2>
+        <div class="about__wrapper">
+            <div class="about__image">
+                <svg class="about__icon" width="256" height="96px">
+                    <use xlink:href="/images/sprites.svg#icon-03"></use>
+                </svg>
+            </div>
+            <div class="about__body">
+                <h3 class="text-primary">ЧТО ЭТО?</h3>
+                <p>
+                    Имплантация зубов - это комплекс хирургических и терапевтических процедур по установке импланта
+                    зуба с последующей фиксацией на таком
+                    переходнике коронки. Высокий уровень постоянно улучшаемых технологий изготовления имплантатов наряду
+                    с профессионализмом
+                    специалистов клиники гарантируют превосходное качество и долговечность применяемых изделий. Самое
+                    важное в процедуре
+                    имплантации — минимальная травматичность, достигаемая постоянным диагностическим контролем и
+                    индивидуальным подходом к
+                    каждому пациенту.
+
+                </p>
+                <h3 class="text-primary">ДЛЯ КОГО ЭТО?</h3>
+                <p>
+                    Имплантация необходима в случае потери одного или нескольких зубов, когда появляется риск изменения
+                    прикуса, затруднения
+                    процесса пережевывания пищи и искривления улыбки. Без данной процедуры не обойтись тем, кто желает
+                    улыбаться без
+                    стеснения и не чувствовать дискомфорт от присутствия во рту имплантата, так как выполняется он по
+                    европейской технологии
+                    и с применением высокоточного оборудования.
+                </p>
+                <a class="btn btn__primary about__button js-open--modal" href="#callback">Запись онлайн</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="callback">
+    <div class="container">
+        <div class="callback__wrapper"><img class="callback__image" src="/images/content/bg-callback.png" alt="">
+            <form class="callback__form" id="callback-form-1">
+                <div class="callback__title">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</div>
+                <div class="callback__subtitle"><span class="text-primary">Не любите звонить
+                        первыми?</span>Оставьте свои контактные данные и мы сами Вам позвоним!</div>
+                <div class="callback__block">
+                    <div class="callback__number">
+                        <input class="form-control phone" type="text" name="phone" required>
+                    </div>
+                    <div class="callback__agree form-checkbox">
+                        <input id="agree" type="checkbox" name="agree" hidden checked>
+                        <label for="agree">
+                            Я согласен с &nbsp;<a class="text-primary" href="#" target="__blank"
+                                rel="nofollow">политикой конфиденциальности</a></label>
+                    </div>
+                    <button class="btn btn__primary callback__button" type="submit">Жду звонка</button>
+                    <p class="callback__desc">Среднее время ожидания звонка 5 минут</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="advantages bg-grey">
+    <div class="container">
+        <div class="advantages__wrapper">
+            <h2 class="advantages__title title">ПОЧЕМУ ВЫБИРАЮТ<span class="text-primary">
+                    LIART DENT</span></h2>
+            <p class="advantages__subtitle subtitle italic"><span class="text-primary">Мелочи не имеют
+                    решающего значения. </span>Мелочи решают все. </p>
+            <div class="advantages__items swiper js-mobileSliderInit">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">1</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">которое имеет значимую роль для клиента</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">2</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">которое имеет значимую роль для клиента</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">3</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">которое имеет значимую роль для клиента</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">4</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">которое имеет значимую роль для клиента</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">5</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">которое имеет значимую роль для клиента</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">6</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">которое имеет значимую роль для клиента</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="portfolio">
+    <div class="container">
+        <h2 class="portfolio__title title">РАБОТЫ <span class="text-primary">LIART DENT</span></h2>
+        <div class="portfolio__wrapper">
+            <div class="portfolio__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="juxtapose"><img src="/images/content/img-original.jpg"><img
+                                src="/images/content/img-modified.jpg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="juxtapose"><img src="/images/content/img-original.jpg"><img
+                                src="/images/content/img-modified.jpg"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="juxtapose"><img src="/images/content/img-original.jpg"><img
+                                src="/images/content/img-modified.jpg"></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+</section>
+<section class="callback bg-grey">
+    <div class="container">
+        <div class="callback__wrapper">
+            <div class="callback__row">
+                <form class="callback__form" id="callback-form-2">
+                    <div class="callback__title">УЛЫБАЙСЯ СЕЙЧАС – ПЛАТИ ПОТОМ</div>
+                    <div class="callback__subtitle">Беспроцентная рассрочка на любой удобный Вам срок.<span
+                            class="text-primary italic">Улыбнись миру – и он улыбнется тебе! </span></div>
+                    <div class="callback__block">
+                        <div class="callback__number">
+                            <input class="form-control phone" type="text" name="phone" required>
+                        </div>
+                        <div class="callback__agree form-checkbox">
+                            <input id="agree" type="checkbox" name="agree" hidden checked>
+                            <label for="agree">
+                                Я согласен с &nbsp;<a class="text-primary" href="#" target="__blank"
+                                    rel="nofollow">политикой конфиденциальности</a></label>
+                        </div>
+                        <button class="btn btn__primary callback__button" type="submit">Оформить
+                            рассрочку</button>
+                        <p class="callback__desc">Среднее время ожидания звонка 5 минут</p>
+                    </div>
+                </form><img class="callback__icon" src="/images/content/callback-bg.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

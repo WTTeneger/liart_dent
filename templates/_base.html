@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+    {% block meta %} {% endblock %}
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#3A71C2">
+    <meta name="format-detection" content="telephone=no">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-57x57.png" sizes="57x57">
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-60x60.png" sizes="60x60">
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-76x76.png" sizes="76x76">
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-114x114.png" sizes="114x114">
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-120x120.png" sizes="120x120">
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="/favicon/apple-icon-180x180.png" sizes="180x180">
+    <link rel="icon" href="/favicon/favicon.ico">
+    <link rel="icon" href="/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" href="/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" href="/favicon/android-icon-192x192.png" sizes="192x192">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+    <link rel="stylesheet" href="/css/main.css?v=1663334331694">
+</head>
+
+<body style="--vhv: 107px;">
+    <script>
+        window.data = {
+            home: ,
+        };
+    </script>
+    <div class="site">
+        <div class="navigation">
+            <div class="navigation__trigger">
+                <svg class="navigation__open">
+                    <use xlink:href="/images/sprites.svg#menu-nav"></use>
+                </svg>
+                <svg class="navigation__close">
+                    <use xlink:href="/images/sprites.svg#close-nav"></use>
+                </svg>
+            </div>
+            <div class="navigation__items">
+                <a class="navigation__item" href="/service/implantation">
+                    <svg class="navigation__icon" width="46" height="65">
+                        <use xlink:href="/images/sprites.svg#icon-01"></use>
+                    </svg>
+                    <div class="navigation__name">Имплантация</div>
+                </a>
+                <a class="navigation__item" href="/service/prosthesis">
+                    <svg class="navigation__icon" width="62" height="53">
+                        <use xlink:href="/images/sprites.svg#icon-02"></use>
+                    </svg>
+                    <div class="navigation__name">Протезирование</div>
+                </a>
+                <a class="navigation__item" href="/service/orthodontics">
+                    <svg class="navigation__icon" width="91" height="34">
+                        <use xlink:href="/images/sprites.svg#icon-03"></use>
+                    </svg>
+                    <div class="navigation__name">Ортодонтия</div>
+                </a>
+                <a class="navigation__item" href="/service/therapy">
+                    <svg class="navigation__icon" width="47" height="69">
+                        <use xlink:href="/images/sprites.svg#icon-04"></use>
+                    </svg>
+                    <div class="navigation__name">Терапия</div>
+                </a>
+                <a class="navigation__item" href="/service/surgery">
+                    <svg class="navigation__icon" width="67.82" height="63">
+                        <use xlink:href="/images/sprites.svg#icon-05"></use>
+                    </svg>
+                    <div class="navigation__name">Хирургия</div>
+                </a>
+                <a class="navigation__item" href="/service/esthetics">
+                    <svg class="navigation__icon" width="74.8" height="35">
+                        <use xlink:href="/images/sprites.svg#icon-06"></use>
+                    </svg>
+                    <div class="navigation__name">Эстетическая стоматология</div>
+                </a>
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__wrapper"><a class="header__logo" href="/"><img src="/logo.png" alt="logo"></a>
+                <button class="header__burger btn js-burger"
+                    type="button"><span></span><span></span><span></span></button>
+                <nav class="header__menu">
+                    <div class="header__lists">
+                        <div class="header__list header__list--hasmenu"><a class="header__link"
+                                href="javascript:void(0);">Услуги</a>
+                            <div class="header__submenu"><a class="header__submenu-link"
+                                    href="/service/implantation">Имплантация</a><a class="header__submenu-link"
+                                    href="/service/prosthesis">Протезирование</a><a class="header__submenu-link"
+                                    href="/service/orthodontics">Ортодонтия</a><a class="header__submenu-link"
+                                    href="/service/therapy">Терапия</a><a class="header__submenu-link"
+                                    href="/service/surgery">Хирургия</a><a class="header__submenu-link"
+                                    href="/service/esthetics">Эстетическая стоматология</a>
+                            </div>
+                        </div>
+                        <div class="header__list"><a class="header__link" href="/">Цены</a>
+                        </div>
+                        <div class="header__list"><a class="header__link" href="/">О нас</a>
+                        </div>
+                        <div class="header__list"><a class="header__link" href="/">Отзывы</a>
+                        </div>
+                        <div class="header__list"><a class="header__link" href="#contacts">Контакты</a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="header__contacts">
+                    <div class="header__contact">+7 925 060 22 11
+                        <svg>
+                            <use xlink:href="/images/sprites.svg#phone"></use>
+                        </svg>
+                    </div>
+                    <div class="header__contact">Мытищи, ул.Комарова, 2к2
+                        <svg>
+                            <use xlink:href="/images/sprites.svg#location"></use>
+                        </svg>
+                    </div>
+                    <div class="header__contact">Пн-Сб: 09:00-21:00
+                        <svg>
+                            <use xlink:href="/images/sprites.svg#time"></use>
+                        </svg>
+                    </div>
+                </div><a class="btn btn__primary header__btn js-open--modal" href="#callback">ЗАПИСАТЬСЯ</a>
+            </div>
+        </header>
+        <main class="content">
+            {% block content %} {% endblock %}
+            <section class="faqs">
+                <div class="container">
+                    <div class="faqs__wrapper">
+                        <h2 class="faqs__title title">Часто задаваемые вопросы к LIART DENT</h2>
+                        <div class="faqs__items">
+                            <div class="faqs__item">
+                                <div class="faqs__header js-accardion">Вы проводите лечение зубов под общим
+                                    наркозом?<span class="faqs__rounded"></span></div>
+                                <div class="faqs__body js-body">
+                                    <p>
+                                        Коллегия стоматологов придерживается мнения, что использование общего наркоза
+                                        приемлемо
+                                        только в следующих случаях:
+                                        - тяжелый случай у пациента, который не в состоянии вынести длительную
+                                        манипуляцию в ротовой
+                                        полости;
+                                        - психологические отклонения или особенности пациента;
+                                        - аллергическая реакция на местный наркоз.
+
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faqs__item">
+                                <div class="faqs__header js-accardion">Могу ли я сама отбелить свои зубы в домашних
+                                    условиях?
+                                    <span class="faqs__rounded"></span>
+                                </div>
+                                <div class="faqs__body js-body">
+                                    <p>Лучше предварительно хотя бы проконсультироваться со специалистом эстетической
+                                        стоматологии,
+                                        чтобы определить показатель
+                                        абразивности дентина иначе можно разрушить поверхность зуба.</p>
+                                </div>
+                            </div>
+                            <div class="faqs__item">
+                                <div class="faqs__header js-accardion">Обязательно ли пользоваться зубной нитью или
+                                    можно просто
+                                    чистить зубы щеткой?<span class="faqs__rounded"></span></div>
+                                <div class="faqs__body js-body">
+                                    <p>Только осмотр стоматолога даст прямой ответ на этот вопрос, так как имеет большое
+                                        значение
+                                        состояние зубной эмали,
+                                        плотность расположения зубов и т.д.</p>
+                                </div>
+                            </div>
+                            <div class="faqs__item">
+                                <div class="faqs__header js-accardion">Какой должен быть интервал между
+                                    профессиональными чистками
+                                    зубов у стоматолога?<span class="faqs__rounded"></span></div>
+                                <div class="faqs__body js-body">
+                                    <p>Специалисты рекомендуют периодичность - один раз в 6 месяцев. Но это средняя
+                                        цифра, у всех
+                                        есть свои индивидуальные
+                                        особенности строения зубов, которые влияют на частоту проведения данной
+                                        процедуры.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="faqs__item">
+                                <div class="faqs__header js-accardion">Какие напитки влияют на состояние зубной
+                                    эмали?<span class="faqs__rounded"></span></div>
+                                <div class="faqs__body js-body">
+                                    <p>У любителей сладких газировок меняется состав слюны, которая постепенно наносит
+                                        вред эмали,
+                                        как и непосредственно сахар
+                                        в напитке, являющийся прекрасной питательной средой для развития кариозных
+                                        микробов.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id='contacts' class="contacts">
+                <div class="container">
+                    <div class="contacts__wrapper">
+                        <h2 class="contacts__title title">КОНТАКТЫ</h2>
+                        <div class="contacts__body">
+                            <div class="contacts__info">
+                                <div class="contacts__items">
+                                    <div class="contacts__item">
+                                        <svg class="contacts__icon">
+                                            <use xlink:href="/images/sprites.svg#phone"></use>
+                                        </svg>
+                                        <p>Телефон: <b>+7 925 060 22 11</b></p>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <svg class="contacts__icon">
+                                            <use xlink:href="/images/sprites.svg#location"></use>
+                                        </svg>
+                                        <p>Адрес: <b>Мытищи, ул.Комарова, 2к2</b></p>
+                                    </div>
+                                    <div class="contacts__item">
+                                        <svg class="contacts__icon">
+                                            <use xlink:href="/images/sprites.svg#time"></use>
+                                        </svg>
+                                        <p>Часы работы: <b>Понедельник-Суббота с 09:00 до 21:00</b></p>
+                                    </div>
+                                </div><a class="contacts__button btn btn__primary" href="tel:+79250602211">Позвонить и
+                                    записаться</a>
+                                <div class="contacts__line"></div>
+                                <div class="contacts__text">
+                                    Кстати, если назовете секретный промокод
+                                    <span class="text-primary">“LIART ВАС ЛЮБИТ”</span>, мы подарим Вам скидку!
+                                    Только т-сс, никому :)
+                                </div>
+                            </div>
+                            <iframe class="contacts__map" id="js-map"
+                                src="https://yandex.uz/map-widget/v1/-/CCUVN4E9GD"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper"><a class="footer__logo" href="/"><img src="/logo.png" alt="logo"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="popup" id="callback">
+        <div class="popup__overlay"></div>
+        <div class="popup__wrapper"><a class="popup__close btn js-close" href="javascript:void(0);"
+                title="Закрыть окно"></a>
+            <div class="popup__body">
+                <div class="popup__title">Заказать обратный звонок</div>
+                <div class="popup__subtitle">Оставьте свои контактные данные либо позвоните по телефону:</div><a
+                    class="popup__link" href="tel:+79250602211"> +7 925 060 22 11</a>
+                <form class="popup__form" id="callback-form">
+                    <div class="form-group">
+                        <input class="form-control phone" type="number" name="phone" required>
+                    </div>
+                    <div class="form-group form-checkbox">
+                        <input id="agree2" type="checkbox" name="agree" hidden checked>
+                        <label for="agree2">
+                            Я согласен с &nbsp;<a class="text-primary" href="#" target="__blank"
+                                rel="nofollow">политикой конфиденциальности</a></label>
+                    </div>
+                    <button class="btn btn__primary" type="submit">Жду звонка</button>
+                </form>
+                <div class="popup__desc">Среднее время ожидания звонка 5 минут</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="popSuccess">
+        <div class="popup__overlay"></div>
+        <div class="popup__wrapper"><a class="popup__close btn js-close" href="javascript:void(0);"
+                title="Закрыть окно"></a>
+            <div class="popup__body">
+                <div class="popup__title">Отлично!!!</div>
+                <div class="popup__subtitle">Наши специалисты перезвонять вам в течении 5 минут. </div>
+                <button class="btn btn__primary js-close" type="button">Закрыть</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        if (!('IntersectionObserver' in window)) {
+            var script = document.createElement("script");
+            script.src = "https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js";
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+    </script>
+    <script src="/js/vendor.js?v=1663334331695"></script>
+    <script src="/js/main.js?v=1663334331695"></script>
+    <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+    <script src="/js/form.js?v=1663334331695"></script>
+</body>
+
+</html>

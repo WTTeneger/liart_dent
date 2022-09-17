@@ -1,0 +1,373 @@
+{% extends "_base.html" %}
+{% block title %}{% endblock %}
+{% block meta %}{% endblock %}
+
+{% block content %}
+<section class="hero bg-grey">
+    <div class="container">
+        <div class="hero__wrapper">
+            <div class="hero__block">
+                <h1 class="hero__title"><span style="font-weight: 200;">СТОМАТОЛОГИЯ</span><br> LIART DENT</h1>
+                <p class="hero__subtitle">Европейское качество по приятной цене.
+                </p><span class="hero__desc">Бесплатная консультация после быстрой записи</span>
+                <div class="hero__buttons"><a class="btn btn__primary hero__button js-open--modal"
+                        href="#callback">Запись онлайн</a><a class="btn btn__secondary hero__button"
+                        href="tel:+79250602211">Задать вопрос врачу</a></div>
+            </div><img class="hero__image" src="./images/content/hero-1.png" alt="СТОМАТОЛОГИЯ" />
+        </div>
+    </div>
+</section>
+<section class="callback">
+    <div class="container">
+        <div class="callback__wrapper"><img class="callback__image" src="./images/content/bg-callback.png" alt="">
+            <form class="callback__form" id="callback-form-1">
+                <div class="callback__title">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</div>
+                <div class="callback__subtitle"><span class="text-primary">Не любите звонить
+                        первыми?</span>Оставьте свои контактные данные и мы сами Вам позвоним!</div>
+                <div class="callback__block">
+                    <div class="callback__number">
+                        <input class="form-control phone" type="text" name="phone" required>
+                    </div>
+                    <div class="callback__agree form-checkbox">
+                        <input id="agree" type="checkbox" name="agree" hidden checked>
+                        <label for="agree">
+                            Я согласен с &nbsp;<a class="text-primary" href="#" target="__blank"
+                                rel="nofollow">политикой конфиденциальности</a></label>
+                    </div>
+                    <button class="btn btn__primary callback__button" type="submit">Жду звонка</button>
+                    <p class="callback__desc">Среднее время ожидания звонка 5 минут</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="services">
+    <div class="container">
+        <div class="services__wrapper">
+            <h2 class="services__title title">УСЛУГИ <span class="text-primary">LIART DENT</span></h2>
+            <div class="services__items swiper js-mobileSliderInit">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="services__item">
+                            <svg class="services__icon">
+                                <use xlink:href="./images/sprites.svg#icon-01"></use>
+                            </svg>
+                            <h5 class="services__name">ИМПЛАНТАЦИЯ</h5>
+                            <p class="services__desc">
+                                Восстановление любого количества утраченных зубов в два шага материалами европейских
+                                стандартов
+                            </p>
+                            <a class="services__btn btn btn__primary" href="/service/implantation">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services__item">
+                            <svg class="services__icon">
+                                <use xlink:href="./images/sprites.svg#icon-02"></use>
+                            </svg>
+                            <h5 class="services__name">ПРОТЕЗИРОВАНИЕ</h5>
+                            <p class="services__desc">
+                                Установка съемных и несъемных протезов одного или нескольких зубов, челюсти с
+                                максимальным приближением к оригиналу
+                            </p>
+                            <a class="services__btn btn btn__primary" href="/service/prosthesis">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services__item">
+                            <svg class="services__icon">
+                                <use xlink:href="./images/sprites.svg#icon-03"></use>
+                            </svg>
+                            <h5 class="services__name">ОРТОДОНТИЯ</h5>
+                            <p class="services__desc">
+                                Устранение дефектов роста и положения зубов в аркаде верхней или нижней челюсти –
+                                исправление неровностей любой степени
+                                и объема
+                            </p>
+                            <a class="services__btn btn btn__primary" href="service/orthodontics">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services__item">
+                            <svg class="services__icon">
+                                <use xlink:href="./images/sprites.svg#icon-04"></use>
+                            </svg>
+                            <h5 class="services__name">ТЕРАПИЯ</h5>
+                            <p class="services__desc">
+                                Профилактика, выявление и профессиональное лечение заболеваний зубов и десен
+                            </p>
+                            <a class="services__btn btn btn__primary" href="service/therapy">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services__item">
+                            <svg class="services__icon">
+                                <use xlink:href="./images/sprites.svg#icon-05"></use>
+                            </svg>
+                            <h5 class="services__name">ХИРУРГИЯ</h5>
+                            <p class="services__desc">
+                                Проведение необходимых хирургических вмешательств с применением гипоаллергенной местной
+                                анестезии
+                            </p>
+                            <a class="services__btn btn btn__primary" href="service/surgery">подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="services__item">
+                            <svg class="services__icon">
+                                <use xlink:href="./images/sprites.svg#icon-06"></use>
+                            </svg>
+                            <h5 class="services__name">ЭСТЕТИКА</h5>
+                            <p class="services__desc">
+                                Реставрация врожденных или приобретенных отклонений во внешней форме зубов (искривления,
+                                щели, размер и т.п.)
+                            </p>
+                            <a class="services__btn btn btn__primary" href="service/esthetics">подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="advantages bg-grey">
+    <div class="container">
+        <div class="advantages__wrapper">
+            <h2 class="advantages__title title">ПРЕИМУЩЕСТВА <span class="text-primary">
+                    LIART DENT</span></h2>
+            <p class="advantages__subtitle subtitle italic">
+                <span class="text-primary">
+                    Мелочи не имеют решающего значения.
+                </span>
+                Мелочи решают все.
+            </p>
+            <div class="advantages__items swiper js-mobileSliderInit">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">1</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">Опыт работы в стоматологической сфере более 20 лет</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">2</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">Оправданная стоимость каждого вида услуг - Вы оплачиваете
+                                работу, а не бренд
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">3</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">Наличие документального подтверждения квалификации
+                                специалистов клиники</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">4</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">Возможность прямой связи благодаря профессиональным действиям
+                                вежливых работников администрации</div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">5</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">Индивидуальная схема работы с каждым пациентом
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="advantages__item">
+                            <div class="advantages__number">6</div>
+                            <div class="advantages__name">Преимущество,</div>
+                            <div class="advantages__desc">Форма оплаты согласовывается для каждого отдельного случая - в
+                                соответствии с возможностями пациента. Предусмотрены
+                                кредит и рассрочка.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="specialist bg-secondary">
+    <div class="container">
+        <h2 class="specialist__title title">СПЕЦИАЛИСТЫ <span class="text-primary">LIART DENT</span></h2>
+        <p class="specialist__subtitle subtitle italic">Важно знать, кому доверяешь.</p>
+        <div class="specialist__items swiper js-mobileSliderInit">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="specialist__item"><img class="specialist__image" src="./images/content/man.png" alt="">
+                        <div class="specialist__name"><span class="text-bold text-primary">Мадоян
+                            </span><br>Нарек Атомович</div>
+                        <div class="specialist__desc italic">Стоматолог, стоматолог-хирург стаж более 4 лет
+                        </div><a class="specialist__btn btn btn__primary js-open--modal" href="#callback">Записаться на
+                            прием</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialist__item"><img class="specialist__image" src="./images/content/man.png" alt="">
+                        <div class="specialist__name"><span class="text-bold text-primary">Мадоян
+                            </span><br>Нарек Атомович</div>
+                        <div class="specialist__desc italic">Стоматолог, стоматолог-хирург стаж более 4 лет
+                        </div><a class="specialist__btn btn btn__primary js-open--modal" href="#callback">Записаться на
+                            прием</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="specialist__item"><img class="specialist__image" src="./images/content/man.png" alt="">
+                        <div class="specialist__name"><span class="text-bold text-primary">Мадоян
+                            </span><br>Нарек Атомович</div>
+                        <div class="specialist__desc italic">Стоматолог, стоматолог-хирург стаж более 4 лет
+                        </div><a class="specialist__btn btn btn__primary js-open--modal" href="#callback">Записаться на
+                            прием</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<section class="clinic">
+    <div class="container">
+        <h2 class="clinic__title title">КЛИНИКА <span class="text-primary">LIART DENT</span></h2>
+        <div class="clinic__gallerys">
+            <div class="clinic__widget swiper js-mobileSliderInit">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a class="clinic__item clinic__item--large"
+                            href="./images/content/clinic-1.jpg" data-fancybox="gallery"><img class="clinic__image"
+                                src="./images/content/clinic-1.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a class="clinic__item clinic__item--small"
+                            href="./images/content/clinic-2.jpg" data-fancybox="gallery"><img class="clinic__image"
+                                src="./images/content/clinic-2.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a class="clinic__item clinic__item--small"
+                            href="./images/content/clinic-3.jpg" data-fancybox="gallery"><img class="clinic__image"
+                                src="./images/content/clinic-3.jpg" alt=""></a></div>
+                    <div class="swiper-slide"><a class="clinic__item clinic__item--large"
+                            href="./images/content/clinic-4.jpg" data-fancybox="gallery"><img class="clinic__image"
+                                src="./images/content/clinic-4.jpg" alt=""></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="callback bg-grey">
+    <div class="container">
+        <div class="callback__wrapper">
+            <div class="callback__row">
+                <form class="callback__form" id="callback-form-2">
+                    <div class="callback__title">УЛЫБАЙСЯ СЕЙЧАС – ПЛАТИ ПОТОМ</div>
+                    <div class="callback__subtitle">Беспроцентная рассрочка на любой удобный Вам срок.<span
+                            class="text-primary italic">Улыбнись миру – и он улыбнется тебе! </span></div>
+                    <div class="callback__block">
+                        <div class="callback__number">
+                            <input class="form-control phone" type="text" name="phone" required>
+                        </div>
+                        <div class="callback__agree form-checkbox">
+                            <input id="agree" type="checkbox" name="agree" hidden checked>
+                            <label for="agree">
+                                Я согласен с &nbsp;<a class="text-primary" href="#" target="__blank"
+                                    rel="nofollow">политикой конфиденциальности</a></label>
+                        </div>
+                        <button class="btn btn__primary callback__button" type="submit">Оформить
+                            рассрочку</button>
+                        <p class="callback__desc">Среднее время ожидания звонка 5 минут</p>
+                    </div>
+                </form><img class="callback__icon" src="./images/content/callback-bg.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="sert">
+    <div class="container">
+        <div class="sert__wrapper">
+            <h2 class="sert__title title">ЛИЦЕНЗИИ <span class="text-primary">LIART DENT</span></h2>
+            <div class="sert__block"><img class="sert__bg" src="./images/content/sert-bg.png" alt="">
+                <div class="sert__gallery swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><a class="sert__item" href="./images/content/sert-1.jpg"
+                                data-fancybox="sert"><img class="sert__img" src="./images/content/sert-1.jpg"
+                                    alt=""></a></div>
+                        <div class="swiper-slide"><a class="sert__item" href="./images/content/sert-1.jpg"
+                                data-fancybox="sert"><img class="sert__img" src="./images/content/sert-1.jpg"
+                                    alt=""></a></div>
+                        <div class="swiper-slide"><a class="sert__item" href="./images/content/sert-1.jpg"
+                                data-fancybox="sert"><img class="sert__img" src="./images/content/sert-1.jpg"
+                                    alt=""></a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="sert__desc">За дополнительной информацией Вы всегда можете обратиться к нашему
+                    администратору</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="rating bg-grey">
+    <div class="container">
+        <div class="rating__wrapper">
+            <h2 class="rating__title title">ТАК ОЦЕНИВАЮТ <span class="text-primary">LIART DENT</span></h2>
+            <div class="rating__items"><a class="rating__item" href="#">
+                    <div class="rating__item-block"><img class="rating__item-logo" src="./images/icon/yandex.png"
+                            alt="">
+                        <p class="italic">средняя оценка <b>4.8</b></p><img class="rating__item-star"
+                            src="./images/icon/star.svg" alt="">
+                    </div>
+                    <div class="rating__item-text"><span>Читать отзыв</span></div>
+                </a><a class="rating__item" href="#">
+                    <div class="rating__item-block"><img class="rating__item-logo" src="./images/icon/yandex.png"
+                            alt="">
+                        <p class="italic">средняя оценка <b>4.8</b></p><img class="rating__item-star"
+                            src="./images/icon/star.svg" alt="">
+                    </div>
+                    <div class="rating__item-text"><span>Читать отзыв</span></div>
+                </a><a class="rating__item" href="#">
+                    <div class="rating__item-block"><img class="rating__item-logo" src="./images/icon/yandex.png"
+                            alt="">
+                        <p class="italic">средняя оценка <b>4.8</b></p><img class="rating__item-star"
+                            src="./images/icon/star.svg" alt="">
+                    </div>
+                    <div class="rating__item-text"><span>Читать отзыв</span></div>
+                </a><a class="rating__item" href="#">
+                    <div class="rating__item-block"><img class="rating__item-logo" src="./images/icon/yandex.png"
+                            alt="">
+                        <p class="italic">средняя оценка <b>4.8</b></p><img class="rating__item-star"
+                            src="./images/icon/star.svg" alt="">
+                    </div>
+                    <div class="rating__item-text"><span>Читать отзыв</span></div>
+                </a><a class="rating__item" href="#">
+                    <div class="rating__item-block"><img class="rating__item-logo" src="./images/icon/yandex.png"
+                            alt="">
+                        <p class="italic">средняя оценка <b>4.8</b></p><img class="rating__item-star"
+                            src="./images/icon/star.svg" alt="">
+                    </div>
+                    <div class="rating__item-text"><span>Читать отзыв</span></div>
+                </a><a class="rating__item" href="#">
+                    <div class="rating__item-block"><img class="rating__item-logo" src="./images/icon/yandex.png"
+                            alt="">
+                        <p class="italic">средняя оценка <b>4.8</b></p><img class="rating__item-star"
+                            src="./images/icon/star.svg" alt="">
+                    </div>
+                    <div class="rating__item-text"><span>Читать отзыв</span></div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="button-section bg-secondary">
+    <div class="container"><a class="btn btn__primary btn__full js-open--modal" href="#callback">Записаться
+            на прием прямо сейчас</a></div>
+</section>
+{% endblock %}

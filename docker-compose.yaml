@@ -1,0 +1,55 @@
+version: '3'
+services:
+
+  web:
+    restart: always
+    build:
+      context: ./
+    volumes:
+      - .:/src
+      - /src/node_modules/
+    command: npm run dev
+    ports:
+      - 80:3000
+      - 8443:8443
+      - 8080:8080
+      - 443:8443
+      # - 80:80
+    environment:
+      NODE_ENV: development
+      PORT: 3000
+      ME_CONFIG_MONGODB_ADMINUSERNAME: leart
+      ME_CONFIG_MONGODB_ADMINPASSWORD: leartpass!
+      ME_CONFIG_MONGODB_URL: mongodb://leart:leartpass!@mongo/leartdb
+
+    depends_on:
+      - mongo
+      - mongo-express
+
+  mongo:
+    ports:
+      - 27017:27017
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: leart
+      MONGO_INITDB_ROOT_PASSWORD: leartpass!
+    volumes:
+      - ./database-data:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      # - 8081:8081
+      - 8111:8081
+
+    environment:
+      ME_CONFIG_BASICAUTH_USERNAME: ITAB
+      ME_CONFIG_BASICAUTH_PASSWORD: ITAB_PASSWORD_LONGER!
+      ME_CONFIG_MONGODB_ADMINUSERNAME: leart
+      ME_CONFIG_MONGODB_ADMINPASSWORD: leartpass!
+      ME_CONFIG_MONGODB_URL: mongodb://leart:leartpass!@mongo:27017/
+      ME_CONFIG_MONGODB_ENABLE_ADMIN: true
+      ME_CONFIG_MONGODB_DATABASE: portfolio
