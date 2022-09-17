@@ -6433,6 +6433,7 @@ div.jx-controller {
 @media (max-width: 1024px) {
     .credit_row {
         grid-template-columns: 1fr;
+        padding: 0 20px;
     }
 
     .credit_partners .callback__icon {
