@@ -6424,6 +6424,31 @@ div.jx-controller {
     align-items: center;
 }
 
+.hb {
+    position: absolute;
+    bottom: 8vw;
+    left: 0vw;
+    width: 90vw;
+    margin: 0 4vw;
+}
+
+.nre {
+    position: initial;
+}
+
+.hero_block {
+    min-height: 88vh;
+    position: relative;
+}
+
+.d_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    row-gap: 10px;
+    margin-top: 4vh;
+}
+
 .credit_partners .callback__icon {
     /* max-width: 200px; */
     max-width: 11vw;
@@ -6442,5 +6467,29 @@ div.jx-controller {
 
     .credit__block {
         flex-direction: column;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .hb {
+        position: initial;
+        bottom: unset;
+        left: unset;
+        width: unset;
+        margin: unset;
+        margin-top: 3vw;
+    }
+
+    .nre {
+        max-width: 96vw;
+        padding: 32px 0 32px;
+    }
+
+    .h_img {
+        z-index: 3;
+        height: 100%;
+        right: -9%;
     }
 }
