@@ -19,7 +19,7 @@ async function get_data_url(req) {
 }
 
 export async function index(req, res) {
-    res.render('index')
+    res.render('index', { 'credit_b': true })
 }
 
 export async function services_type(req, res) {
