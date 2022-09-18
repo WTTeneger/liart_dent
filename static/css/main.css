@@ -5174,13 +5174,13 @@ div.jx-controller {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    min-height: 28rem;
+    min-height: 21rem;
     position: relative;
     margin-top: 1rem;
 }
 
 .services__icon {
-    height: auto;
+    height: 6vw;
     margin-bottom: 23px;
     width: auto
 }
@@ -5194,7 +5194,7 @@ div.jx-controller {
 
 .services__desc,
 .services__name {
-    font-size: 24px;
+    font-size: 17px;
     letter-spacing: .02em;
     line-height: 30px;
     margin-top: 0;
@@ -5202,7 +5202,7 @@ div.jx-controller {
 }
 
 .services__desc {
-    font-size: 17px;
+    font-size: 14px;
     color: #575757;
     margin-bottom: 20px
 }
