@@ -6525,7 +6525,22 @@ margin: 0 4vw; */
         flex-direction: column;
     }
 
+    .services__name {
+        font-size: 24px;
+    }
 
+    .services__btn {
+        width: 75vw;
+    }
+
+    .services__desc {
+        font-size: 17px;
+        width: 75vw;
+    }
+
+    .services__icon {
+        height: 16vw;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -6558,4 +6573,5 @@ padding: 32px 0 32px; */
         height: 100%;
         right: -9%;
     }
+
 }
