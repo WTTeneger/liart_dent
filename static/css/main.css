@@ -5167,7 +5167,6 @@ div.jx-controller {
         gap: 25px 30px;
         grid-template-columns: repeat(3, 1fr)
     }
-
 }
 
 .services__item {
@@ -6550,6 +6549,24 @@ margin: 0 4vw; */
 
     .services__icon {
         height: 16vw;
+    }
+}
+
+.hero_block_mobile {
+    display: none;
+}
+
+.hero_block_pc {
+    display: block;
+}
+
+@media (max-width:850px) {
+    .hero_block_mobile {
+        display: block;
+    }
+
+    .hero_block_pc {
+        display: none;
     }
 }
 
