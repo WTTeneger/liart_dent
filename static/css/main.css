@@ -4056,6 +4056,11 @@ div.jx-controller {
 }
 
 @media (min-width:1025px) {
+
+    .svsq {
+        gap: 36px 50px;
+    }
+
     .header__burger {
         display: none
     }
@@ -5140,7 +5145,7 @@ div.jx-controller {
 }
 
 .services__title {
-    margin-bottom: 70px
+    margin-bottom: 40px
 }
 
 @media (max-width:1024px) {
@@ -5159,8 +5164,10 @@ div.jx-controller {
         display: -ms-grid;
         display: grid;
         gap: 62px 126px;
+        gap: 25px 30px;
         grid-template-columns: repeat(3, 1fr)
     }
+
 }
 
 .services__item {
@@ -5180,7 +5187,7 @@ div.jx-controller {
 }
 
 .services__icon {
-    height: 6vw;
+    height: 5vw;
     margin-bottom: 23px;
     width: auto
 }
@@ -5211,7 +5218,7 @@ div.jx-controller {
     font-weight: 400;
     height: 50px;
     position: absolute;
-    bottom: 0px;
+    bottom: 25px;
 }
 
 .advantages {
@@ -5316,7 +5323,9 @@ div.jx-controller {
 .advantages__desc {
     color: #575757;
     font-size: 18px;
-    line-height: 40px
+    line-height: 40px;
+    font-size: 16px;
+    line-height: 30px
 }
 
 .specialist {
@@ -5437,6 +5446,7 @@ div.jx-controller {
 }
 
 @media (min-width:1025px) {
+
     .clinic .swiper-wrapper {
         -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
         display: -ms-grid;
@@ -6543,7 +6553,9 @@ margin: 0 4vw; */
     }
 }
 
-@media (min-width: 1024px) {
+
+@media (min-width:1025px) {
+
     .sf .hero__title {
         font-size: calc(16.8px + 4.125vw);
     }
