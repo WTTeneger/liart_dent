@@ -5241,6 +5241,7 @@ div.jx-controller {
     }
 }
 
+
 .advantages__items {
     margin-top: 90px
 }
@@ -5352,6 +5353,9 @@ div.jx-controller {
     margin-top: 42px
 }
 
+
+
+
 @media (max-width:1024px) {
     .specialist__items {
         padding-bottom: 50px
@@ -5368,6 +5372,7 @@ div.jx-controller {
     }
 }
 
+
 .specialist__item {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5380,19 +5385,29 @@ div.jx-controller {
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 35px
+    padding: 35px;
+
+    height: 100%;
+    position: relative;
 }
+
+
 
 .specialist__image {
     aspect-ratio: 1;
-    background-color: #d9d9d9;
     border-radius: 50%;
+    background-color: #d9d9d9;
     -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
     box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
     display: block;
     height: auto;
     margin-bottom: 22px;
     /* width: 100% */
+    /* background: url(/images/staff/1.png); */
+    width: 80%;
+    background-size: cover;
+    box-shadow: 0 0 20px 0px #000000;
+    background-color: #e8f0f9;
 }
 
 .specialist__name {
@@ -5411,7 +5426,8 @@ div.jx-controller {
 
 .specialist__desc {
     color: #575757;
-    font-size: 20px
+    font-size: 20px;
+    margin-bottom: 23%;
 }
 
 .specialist__btn {
@@ -5423,6 +5439,12 @@ div.jx-controller {
     width: 100%
 }
 
+.specialist__btn {
+    bottom: 4%;
+    width: 80%;
+    position: absolute;
+}
+
 .clinic {
     padding-bottom: 91px;
     padding-top: 89px
@@ -5432,6 +5454,8 @@ div.jx-controller {
     .clinic {
         padding: 50px 0
     }
+
+
 }
 
 .clinic__title {
@@ -5442,10 +5466,13 @@ div.jx-controller {
     .clinic__widget {
         padding-bottom: 50px
     }
+
+    .swiper-slides {
+        width: 30%;
+    }
 }
 
 @media (min-width:1025px) {
-
     .clinic .swiper-wrapper {
         -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
         display: -ms-grid;
@@ -6603,4 +6630,19 @@ padding: 32px 0 32px; */
         right: -9%;
     }
 
+}
+
+@media (min-width:1024px) {
+    .swiper-wrappers {
+        display: flex !important;
+        grid-template-columns: auto !important;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 55px;
+    }
+
+    .swiper-wrappers .swiper-slide {
+        width: 30%;
+    }
 }
