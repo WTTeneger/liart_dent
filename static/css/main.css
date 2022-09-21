@@ -5412,8 +5412,8 @@ div.jx-controller {
     background-size: cover;
     box-shadow: 0 0 20px 0px #000000;
     background-color: #e8f0f9;
-    max-width: 58vw;
-    max-height: 58vw;
+    max-width: 25vw;
+    max-height: 25vw;
 }
 
 .specialist__name {
