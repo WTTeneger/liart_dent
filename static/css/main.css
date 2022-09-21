@@ -5408,6 +5408,8 @@ div.jx-controller {
     background-size: cover;
     box-shadow: 0 0 20px 0px #000000;
     background-color: #e8f0f9;
+    max-width: 58vw;
+    max-height: 58vw;
 }
 
 .specialist__name {
@@ -6595,6 +6597,11 @@ margin: 0 4vw; */
     .hero_block_pc {
         display: none;
     }
+
+    .specialist__image {
+        width: 60vw;
+        height: 60vw;
+    }
 }
 
 
@@ -6645,4 +6652,5 @@ padding: 32px 0 32px; */
     .swiper-wrappers .swiper-slide {
         width: 30%;
     }
+
 }
