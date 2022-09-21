@@ -2892,7 +2892,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     display: block
 }
 
-@media (max-width:1024px) {
+@media (max-width:1920px) {
     @font-face {
         font-family: swiper-icons;
         font-style: normal;
@@ -2935,6 +2935,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
         transition-property: transform;
         transition-property: transform, -webkit-transform;
         width: 100%;
+        align-items: stretch;
         z-index: 1
     }
 
@@ -2958,6 +2959,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
         -ms-flex-negative: 0;
         flex-shrink: 0;
         height: 100%;
+        height: auto;
         position: relative;
         -webkit-transition-property: -webkit-transform;
         transition-property: -webkit-transform;
@@ -2990,6 +2992,7 @@ body:not(.is-using-mouse) .fancybox__container :focus {
     .swiper-backface-hidden .swiper-slide {
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        height: auto;
         -webkit-transform: translateZ(0);
         transform: translateZ(0)
     }
@@ -5366,8 +5369,8 @@ div.jx-controller {
     .specialist .swiper-wrapper {
         -ms-grid-columns: 1fr 55px 1fr 55px 1fr;
         display: -ms-grid;
-        display: grid;
-        gap: 55px;
+        /* display: grid; */
+        /* gap: 55px; */
         grid-template-columns: repeat(3, 1fr)
     }
 }
@@ -5389,6 +5392,7 @@ div.jx-controller {
 
     height: 100%;
     position: relative;
+    height: 89%;
 }
 
 
@@ -6599,8 +6603,8 @@ margin: 0 4vw; */
     }
 
     .specialist__image {
-        width: 60vw;
-        height: 60vw;
+        width: 50vw;
+        height: 50vw;
     }
 }
 
