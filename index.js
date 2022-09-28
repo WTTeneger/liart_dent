@@ -9,28 +9,15 @@ console.log(PORT);
 import * as fs from 'fs';
 import * as http from 'http'
 import * as https from 'https'
-// const port = 3000;
-// var privateKey = fs.readFileSync('sslcert/selfsigned.key', 'ascii');
-// var certificate = fs.readFileSync('sslcert/selfsigned.crt', 'ascii');
+
 var privateKey = fs.readFileSync('sslcert/server.key');
 var certificate = fs.readFileSync('sslcert/server.crt');
-// var ca1 = fs.readFileSync(__dirname + '/sslcert/ca1.crt', 'ascii');
-// var ca2 = fs.readFileSync(__dirname + '/sslcert/ca2.crt', 'ascii');
-console.log(privateKey);
+
 
 var credentials = {
-    key: privateKey,
     cert: certificate,
-    // ca: [ca1, ca2]
+    key: privateKey,
 };
-
-app.use(function (req, resp, next) {
-    if (req.headers['x-forwarded-proto'] == 'http') {
-        return resp.redirect(301, 'https://' + req.headers.host + '/');
-    } else {
-        return next();
-    }
-});
 
 http.createServer(app).listen(3000)
 https.createServer(credentials, app).listen(8443)

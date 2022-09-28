@@ -35,6 +35,24 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 // app.use(cookieParser())
 
+
+let redirectHTTPS = function (req, resp, next) {
+    // console.log(req.headers);
+    // console.log(req);
+    try {
+        // console.log(req.protocol);
+        if (req.protocol == 'http') {
+            return resp.redirect(301, 'https://' + req.headers.host + '/');
+        } else {
+            return next();
+        }
+    } catch {
+        return next();
+    }
+};
+
+app.use(redirectHTTPS);
+
 app.use('/', router)
 
 // app.listen(port, () => {
