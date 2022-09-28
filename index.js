@@ -12,15 +12,16 @@ import * as https from 'https'
 // const port = 3000;
 // var privateKey = fs.readFileSync('sslcert/selfsigned.key', 'ascii');
 // var certificate = fs.readFileSync('sslcert/selfsigned.crt', 'ascii');
-var privateKey = fs.readFileSync('sslcert/server.key');
 var certificate = fs.readFileSync('sslcert/server.crt');
+var privateKey = fs.readFileSync('sslcert/server.key');
 // var ca1 = fs.readFileSync(__dirname + '/sslcert/ca1.crt', 'ascii');
 // var ca2 = fs.readFileSync(__dirname + '/sslcert/ca2.crt', 'ascii');
+console.log(certificate);
 console.log(privateKey);
 
 var credentials = {
-    key: privateKey,
     cert: certificate,
+    key: privateKey,
     // passphrase: '123456'
     // ca: [ca1, ca2]
 };
