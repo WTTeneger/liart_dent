@@ -21,7 +21,7 @@ console.log(privateKey);
 var credentials = {
     key: privateKey,
     cert: certificate,
-    passphrase: '123456'
+    // passphrase: '123456'
     // ca: [ca1, ca2]
 };
 
