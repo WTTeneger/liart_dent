@@ -9,15 +9,21 @@ console.log(PORT);
 import * as fs from 'fs';
 import * as http from 'http'
 import * as https from 'https'
-
+// const port = 3000;
+// var privateKey = fs.readFileSync('sslcert/selfsigned.key', 'ascii');
+// var certificate = fs.readFileSync('sslcert/selfsigned.crt', 'ascii');
 var privateKey = fs.readFileSync('sslcert/server.key');
 var certificate = fs.readFileSync('sslcert/server.crt');
-
+// var ca1 = fs.readFileSync(__dirname + '/sslcert/ca1.crt', 'ascii');
+// var ca2 = fs.readFileSync(__dirname + '/sslcert/ca2.crt', 'ascii');
+console.log(privateKey);
 
 var credentials = {
-    cert: certificate,
     key: privateKey,
+    cert: certificate,
+    // ca: [ca1, ca2]
 };
+
 
 http.createServer(app).listen(3000)
 https.createServer(credentials, app).listen(8443)
