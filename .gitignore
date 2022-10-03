@@ -1,0 +1,4 @@
+node_modules/ajv/lib/ajv.d.ts
+# все что в node_modules
+node_modules/
+

@@ -6,6 +6,7 @@ import { dirname } from "path";
 import fs from "fs";
 import { v4 as uuidv4 } from 'uuid';
 import bids from './models/Bids.js'
+import * as tg from './telegram.js'
 
 // import mongoose from 'mongoose'
 const __filename = fileURLToPath(import.meta.url);
@@ -47,6 +48,9 @@ export async function services_api_add_bids(req, res) {
     const silence = new bids({ phone: data['phone'], page: data['page'] });
     console.log(silence);
     silence.save();
+    let txt = tg.formater(data['phone'], data['page']);
+    tg.senders_(txt);
+    
     res.send({
         id: silence._id,
         data: data

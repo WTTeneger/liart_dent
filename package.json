@@ -31,6 +31,7 @@
     "mongoose": "^6.4.0",
     "morgan": "^1.10.0",
     "node-po": "^0.1.2",
+    "node-telegram-bot-api": "^0.59.0",
     "nodemailer": "^6.7.7",
     "nunjucks": "^3.2.3",
     "pofile": "^1.1.3",
